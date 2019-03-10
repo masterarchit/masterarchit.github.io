@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="#">
 
     <!-- title -->
-    <title>Archit Gajjar | Publications</title>
+    <title>Archit Gajjar</title>
 
     <!-- meta tags for author, keywords, description -->
     <meta name-'author' content='Sandip Vinodray Ravaliya & Archit Gajjar'>
@@ -84,22 +84,15 @@
         </div>
     </nav>
 
-    <div class='container' id='name-div'>
-        <div class='row'>
-            <div class='col-12'>
-                <h1 class='title'>
-                    <span>Publications</span>
-
-                </h1>
-            </div>
-        </div>
-    </div>
-
 
     <div class='container' id='main'>
         <section id='publications'>
             <div class='row'>
                 <div class='col-12'>
+                    <h1 class='title'>
+                        <span>Publications</span>
+
+                    </h1>
                     <h3 class='title'></h3>
                     <ul>
                         <li>(C) K. Vaca, <strong>A. Gajjar</strong>, X. Yang, et al., "Real-Time Automatic Music
@@ -144,15 +137,15 @@
 
     <footer>
 
-            <p id='last-updated-para'>
-                [<a href="CV/AGajjar_CV.pdf" target='_blank'>CV</a>]
-                [<a href="https://scholar.google.com/citations?user=FCZ3WW4AAAAJ&hl=en" target='_blank'>Google Scholar</a>]
-                [<a href="https://www.linkedin.com/in/architgajjar/" target='_blank'>LinkedIn</a>]
-                [<a href="https://www.youtube.com/channel/UCqWel8hdwAfAGO-GFgVf21w" target='_blank'>YouTube</a>] <br />
-    
-                <!--Last Updated On: 9<sup>th</sup> March 2019.-->
-                <!--<script>document.write( document.lastModified );</script>-->
-                <script type="text/JavaScript" language="JavaScript">
+        <p id='last-updated-para'>
+            [<a href="CV/AGajjar_CV.pdf" target='_blank'>CV</a>]
+            [<a href="https://scholar.google.com/citations?user=FCZ3WW4AAAAJ&hl=en" target='_blank'>Google Scholar</a>]
+            [<a href="https://www.linkedin.com/in/architgajjar/" target='_blank'>LinkedIn</a>]
+            [<a href="https://www.youtube.com/channel/UCqWel8hdwAfAGO-GFgVf21w" target='_blank'>YouTube</a>] <br />
+
+            <!--Last Updated On: 9<sup>th</sup> March 2019.-->
+            <!--<script>document.write( document.lastModified );</script>-->
+            <script type="text/JavaScript" language="JavaScript">
                             <!-- 
                             //
                             // format date as dd-mmm-yy
@@ -222,54 +215,55 @@
     
                             // -->
                             </script>
-            </p>
-    
-        </footer>
-    
-    
-        <!-- scripts for impoting local jQuery, popper.js and bootstrap .js file -->
-        <script type="text/javascript" src='js/jquery-3.3.1.js'></script>
-        <script type="text/javascript" src='js/popper.min.js'></script>
-        <script type="text/javascript" src='js/bootstrap.js'></script>
-    
-        <!-- internal scripting -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-    
-                var scroll_top_offset;
-                $('a.nav-link').each(function () {
-                    $(this).click(function (e) {
-                        e.preventDefault();
-                        if ($(window).width() < 992) {
-                            scroll_top_offset = 60;
-                            $('#menu-button').click();
-                        } else {
-                            scroll_top_offset = 80;
-                        }
-                        console.log(scroll_top_offset)
-                        $('html, body').animate({
-                            scrollTop: ($('#' + this.id.split('-')[1]).offset().top - scroll_top_offset)
-                        }, 500, 'swing');
-    
-                    });
+        </p>
+
+    </footer>
+
+
+    <!-- scripts for impoting local jQuery, popper.js and bootstrap .js file -->
+    <script type="text/javascript" src='js/jquery-3.3.1.js'></script>
+    <script type="text/javascript" src='js/popper.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.js'></script>
+
+    <!-- internal scripting -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var scroll_top_offset;
+            $('a.nav-link').each(function () {
+                $(this).click(function (e) {
+                    e.preventDefault();
+                    if ($(window).width() < 992) {
+                        scroll_top_offset = 60;
+                        $('#menu-button').click();
+                    } else {
+                        scroll_top_offset = 80;
+                    }
+                    console.log(scroll_top_offset)
+                    $('html, body').animate({
+                        scrollTop: ($('#' + this.id.split('-')[1]).offset().top - scroll_top_offset)
+                    }, 500, 'swing');
+
                 });
-    
-                $(function () {
-                    $(window).on('scroll', function () {
-                        // console.log($(window).scrollTop());
-                        if ($(window).scrollTop() > 400) {
-                            $('#go-to-top').show();
-                        } else {
-                            $('#go-to-top').hide();
-                        }
-                    });
-    
-                    $('#go-to-top').on('click', function () {
-                        $('html, body').animate({ scrollTop: 0 }, 500, 'swing');
-                    });
-                });
-    
             });
-        </script>
+
+            $(function () {
+                $(window).on('scroll', function () {
+                    // console.log($(window).scrollTop());
+                    if ($(window).scrollTop() > 400) {
+                        $('#go-to-top').show();
+                    } else {
+                        $('#go-to-top').hide();
+                    }
+                });
+
+                $('#go-to-top').on('click', function () {
+                    $('html, body').animate({ scrollTop: 0 }, 500, 'swing');
+                });
+            });
+
+        });
+    </script>
 </body>
+
 </html>
