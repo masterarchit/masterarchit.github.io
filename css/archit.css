@@ -194,7 +194,9 @@ a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+#main {
+		margin-top: 60px;
+	}
 }
 
 /* Extra Large devices (large desktops, 1200px and up) */
@@ -203,5 +205,7 @@ a:hover {
 	#go-to-top {
 		right: 2%;
 	}
-
+#main {
+		margin-top: 60px;
+	}
 }
