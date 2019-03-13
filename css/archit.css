@@ -17,6 +17,13 @@ body {
 	box-shadow: 3px 3px 3px #6c757d;
 }
 
+
+.active-link{
+
+	color: white;
+}
+
+
 .navbar-nav {
 	padding-top: 15px;
 	flex-direction: row !important;
